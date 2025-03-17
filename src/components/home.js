@@ -31,7 +31,7 @@ const Home = () => {
             <div className="relative w-64 h-64 md:w-80 md:h-80 mx-auto">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 rounded-full animate-pulse"></div>
               <img
-                src="/assets/Foto-Profile.jpg"
+                src={process.env.PUBLIC_URL + "/assets/Foto-Profile.jpg"}
                 alt="Ferry Wilson"
                 className="absolute inset-1 w-[calc(100%-8px)] h-[calc(100%-8px)] object-cover rounded-full border-4 border-gray-800"
               />
