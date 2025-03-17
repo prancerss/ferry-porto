@@ -6,7 +6,7 @@ const MyProject = () => {
   const projects = [
     {
       name: 'Prototype Pinterest UI/UX',
-      image: '/assets/project 1.png',
+      image: '/assets/project1.png',
       description: 'Prototype UI/UX Design of Pinterest App by Adding Some New Features According to Creativity.',
       githubLink: 'https://www.figma.com/design/NGmMAOCmYXNziqVZo37XU3/PINTEREST?node-id=0-1&t=3fu0PnCqpMPavsAT-1',
       liveLink: 'https://www.figma.com/proto/NGmMAOCmYXNziqVZo37XU3/PINTEREST?node-id=0-1&t=3fu0PnCqpMPavsAT-1',
@@ -14,7 +14,7 @@ const MyProject = () => {
     },
     {
       name: 'Prototype Erigo Store UI/UX',
-      image: '/assets/project 2.png',
+      image: '/assets/project2.png',
       description: 'A sales website called Erigo Store was originally web-based only. Then, a UI/UX prototype was created in a mobile version with self-developed creativity.',
       githubLink: 'https://www.figma.com/design/sdaj3vqoaabLrdxMnKXFxb/ERIGO-UI?node-id=3-7&t=45GfKMv0fSnIhHv2-1',
       liveLink: 'https://www.figma.com/proto/sdaj3vqoaabLrdxMnKXFxb/ERIGO-UI?node-id=3-7&t=45GfKMv0fSnIhHv2-1',
@@ -22,7 +22,7 @@ const MyProject = () => {
     },
     {
       name: 'Sales Website',
-      image: '/assets/project 3.png',
+      image: '/assets/project3.png',
       description: 'A full-stack e-commerce website that helps companies sell their products. The admin dashboard allows for managing product data, orders, and sales reports. This project was developed as part of a final thesis assignment.',
       githubLink: '#',
       liveLink: '#',
@@ -34,7 +34,7 @@ const MyProject = () => {
     },
     {
         name: 'Jastipfully Landing Page',
-        image: '/assets/project 4.png',
+        image: '/assets/project4.png',
         description: 'A website that provides information about the company and the services it offers.',
         githubLink: '#',
         liveLink: 'https://jastipfully.com/',
