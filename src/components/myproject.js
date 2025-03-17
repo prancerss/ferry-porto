@@ -60,7 +60,7 @@ const MyProject = () => {
             >
               <div className="relative w-full h-48 mb-6 rounded-lg overflow-hidden">
                 <img
-                  src={project.image}
+                  src={process.env.PUBLIC_URL + project.image}
                   alt={project.name}
                   className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
                 />
