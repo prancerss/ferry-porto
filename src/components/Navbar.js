@@ -19,7 +19,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-gray-900/95 backdrop-blur-sm shadow-lg' : 'bg-transparent'}`}>
+    <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled || isOpen ? 'bg-gray-900/95 backdrop-blur-sm shadow-lg' : 'bg-transparent'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
@@ -56,12 +56,12 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Menu */}
-        <div className={`md:hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
-          <div className="px-2 pt-2 pb-3 space-y-1">
-            <a href="#home" onClick={(e) => { e.preventDefault(); document.querySelector('.min-h-screen').scrollIntoView({ behavior: 'smooth' }); setIsOpen(false); }} className="block px-3 py-2 text-gray-300 hover:text-white hover:bg-gray-700/50 rounded-md transition-all duration-300">Home</a>
-            <a href="#about" onClick={(e) => { e.preventDefault(); document.querySelector('#about').scrollIntoView({ behavior: 'smooth' }); setIsOpen(false); }} className="block px-3 py-2 text-gray-300 hover:text-white hover:bg-gray-700/50 rounded-md transition-all duration-300">About</a>
-            <a href="#projects" onClick={(e) => { e.preventDefault(); document.querySelector('#projects').scrollIntoView({ behavior: 'smooth' }); setIsOpen(false); }} className="block px-3 py-2 text-gray-300 hover:text-white hover:bg-gray-700/50 rounded-md transition-all duration-300">Projects</a>
-            <a href="#contact" onClick={(e) => { e.preventDefault(); document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' }); setIsOpen(false); }} className="block px-3 py-2 text-gray-300 hover:text-white hover:bg-gray-700/50 rounded-md transition-all duration-300">Contact</a>
+        <div className={`md:hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-[400px] opacity-100 border-t border-gray-700' : 'max-h-0 opacity-0 overflow-hidden'}`}>
+          <div className="px-2 pt-4 pb-3 space-y-3">
+            <a href="#home" onClick={(e) => { e.preventDefault(); document.querySelector('.min-h-screen').scrollIntoView({ behavior: 'smooth' }); setIsOpen(false); }} className="block px-4 py-3 text-base text-gray-300 hover:text-white hover:bg-gray-700/50 rounded-md transition-all duration-300 font-medium">Home</a>
+            <a href="#about" onClick={(e) => { e.preventDefault(); document.querySelector('#about').scrollIntoView({ behavior: 'smooth' }); setIsOpen(false); }} className="block px-4 py-3 text-base text-gray-300 hover:text-white hover:bg-gray-700/50 rounded-md transition-all duration-300 font-medium">About</a>
+            <a href="#projects" onClick={(e) => { e.preventDefault(); document.querySelector('#projects').scrollIntoView({ behavior: 'smooth' }); setIsOpen(false); }} className="block px-4 py-3 text-base text-gray-300 hover:text-white hover:bg-gray-700/50 rounded-md transition-all duration-300 font-medium">Projects</a>
+            <a href="#contact" onClick={(e) => { e.preventDefault(); document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' }); setIsOpen(false); }} className="block px-4 py-3 text-base text-gray-300 hover:text-white hover:bg-gray-700/50 rounded-md transition-all duration-300 font-medium">Contact</a>
           </div>
           <div className="flex justify-center space-x-4 pb-4">
             <a href="https://github.com/prancerss" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors duration-300">
