@@ -16,7 +16,7 @@ const Home = () => {
               I'm a Fresh Graduate at Tarumanagara University with a Bachelor of Computer Science.
             </p>
             <div className="flex gap-6 mb-12 animate-slide-up delay-300">
-              <a href={"/assets/cv.pdf"} target="_blank" rel="noopener noreferrer" 
+              <a href={"/assets/CV.pdf"} target="_blank" rel="noopener noreferrer" 
                  className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-300 flex items-center gap-2">
                 <PiReadCvLogoFill className='w-5 h-5'/> Download My CV
               </a>
