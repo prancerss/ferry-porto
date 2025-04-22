@@ -12,11 +12,11 @@ const Home = () => {
           <div className="text-left animate-fade-in md:w-3/5">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 animate-slide-up bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 text-transparent bg-clip-text">Hello, I'm Ferry Wilson</h1>
             <p className="text-xl md:text-2xl text-blue-300 mb-8 animate-slide-up delay-100">Full Stack Developer & UI/UX Designer.</p>
-            <p className="text-lg text-purple-300 max-w-2xl mb-12 animate-slide-up delay-200">
-              I'm a Fresh Graduate at Tarumanagara University with a Bachelor of Computer Science.
+            <p className="text-lg text-purple-300 max-w-2xl mb-12 animate-slide-up delay-200 text-justify">
+            Fresh graduate from Tarumanagara University in Information System, skilled in frontend and backend development (React.js, Next.js, Node.js, Express.js), focus on UI/UX design and do research before starting a project.
             </p>
             <div className="flex gap-6 mb-12 animate-slide-up delay-300">
-              <a href={"/assets/CV.pdf"} target="_blank" rel="noopener noreferrer" 
+              <a href={"/assets/CV FERRY WILSON.pdf"} target="_blank" rel="noopener noreferrer" 
                  className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-300 flex items-center gap-2">
                 <PiReadCvLogoFill className='w-5 h-5'/> Download My CV
               </a>

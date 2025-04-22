@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaCode, FaGraduationCap, FaReact, FaNodeJs, FaDatabase, FaFigma } from 'react-icons/fa';
-import { SiTailwindcss, SiJavascript, SiNextdotjs } from 'react-icons/si';
+import { SiTailwindcss, SiJavascript, SiNextdotjs, SiExpress } from 'react-icons/si';
 
 const AboutMe = () => {
   const techStack = [
@@ -8,9 +8,9 @@ const AboutMe = () => {
     { name: 'React', icon: FaReact, color: 'text-blue-400' },
     { name: 'Next.js', icon: SiNextdotjs, color: 'text-blue-400' },
     { name: 'Node.js', icon: FaNodeJs, color: 'text-green-500' },
+    { name: 'Express.js', icon: SiExpress, color: 'text-gray-400' },
     { name: 'Tailwind CSS', icon: SiTailwindcss, color: 'text-cyan-400' },
     { name: 'Figma', icon: FaFigma, color: 'text-pink-400' },
-
   ];
 
   const education = [
@@ -18,6 +18,7 @@ const AboutMe = () => {
       degree: 'Bachelor of Computer Science',
       institution: 'Tarumanagara University',
       year: '2021 - 2024',
+      gpa: '3.92',
       description: 'Graduated with honors, focusing on Full Stack Development and UI/UX Design.'
     }
   ];
@@ -62,7 +63,10 @@ const AboutMe = () => {
                 className="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 hover:border-purple-500 transition-all duration-300"
               >
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-                  <h4 className="text-xl font-semibold text-white mb-2 md:mb-0">{edu.degree}</h4>
+                  <div>
+                    <h4 className="text-xl font-semibold text-white mb-2 md:mb-0">{edu.degree}</h4>
+                    <p className="text-emerald-400 font-medium">GPA: {edu.gpa}</p>
+                  </div>
                   <span className="text-purple-400 font-medium">{edu.year}</span>
                 </div>
                 <p className="text-lg text-blue-300 mb-2">{edu.institution}</p>
